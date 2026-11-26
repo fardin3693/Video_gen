@@ -12,3 +12,6 @@ __pycache__/
 .env
 .env.*
 !.env.example
+
+# Heart-short intermediate audio, frames and local npm tool binaries.
+/build/
