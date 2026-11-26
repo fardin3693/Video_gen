@@ -1,0 +1,9 @@
+node_modules/
+.venv/
+.ttstest/
+.cache/
+film/.hyperframes/
+film/.hyperframes-*/
+film/renders/
+*.log
+__pycache__/

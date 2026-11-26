@@ -1,0 +1,154 @@
+{
+  "topic": "What if the Sun vanished?",
+  "voice": "am_michael",
+  "duration": 54,
+  "sections": [
+    {
+      "text": "What if the Sun vanished?",
+      "speed": 1.02,
+      "scene": "cosmos",
+      "pause": 0.25
+    },
+    {
+      "text": "For about eight minutes and twenty seconds,",
+      "speed": 0.92,
+      "scene": "city",
+      "pause": 0.06
+    },
+    {
+      "text": "you'd notice nothing.",
+      "speed": 0.92,
+      "scene": "city",
+      "pause": 0.18
+    },
+    {
+      "text": "Sunlight already in space",
+      "speed": 0.95,
+      "scene": "light",
+      "pause": 0.03
+    },
+    {
+      "text": "would still be racing toward Earth.",
+      "speed": 0.95,
+      "scene": "light",
+      "pause": 0.2
+    },
+    {
+      "text": "Then daylight would end.",
+      "speed": 0.93,
+      "scene": "dark",
+      "pause": 0.3
+    },
+    {
+      "text": "In this impossible thought experiment,",
+      "speed": 0.98,
+      "scene": "orbit",
+      "pause": 0.05
+    },
+    {
+      "text": "changes in gravity also travel at light speed.",
+      "speed": 0.96,
+      "scene": "orbit",
+      "pause": 0.15
+    },
+    {
+      "text": "Earth would leave its solar orbit,",
+      "speed": 0.96,
+      "scene": "orbit",
+      "pause": 0.05
+    },
+    {
+      "text": "moving roughly along a tangent.",
+      "speed": 0.94,
+      "scene": "orbit",
+      "pause": 0.2
+    },
+    {
+      "text": "But we wouldn't instantly freeze.",
+      "speed": 0.96,
+      "scene": "heat",
+      "pause": 0.1
+    },
+    {
+      "text": "The oceans and atmosphere store heat.",
+      "speed": 0.94,
+      "scene": "heat",
+      "pause": 0.16
+    },
+    {
+      "text": "Without sunlight, photosynthesis would stop,",
+      "speed": 0.96,
+      "scene": "ice",
+      "pause": 0.08
+    },
+    {
+      "text": "and the surface would keep cooling.",
+      "speed": 0.94,
+      "scene": "ice",
+      "pause": 0.28
+    },
+    {
+      "text": "Now the twist.",
+      "speed": 0.94,
+      "scene": "vent",
+      "pause": 0.24
+    },
+    {
+      "text": "Life",
+      "speed": 0.94,
+      "scene": "vent",
+      "pause": 0.035,
+      "word": true
+    },
+    {
+      "text": "could",
+      "speed": 0.94,
+      "scene": "vent",
+      "pause": 0.035,
+      "word": true
+    },
+    {
+      "text": "survive.",
+      "speed": 0.94,
+      "scene": "vent",
+      "pause": 0.18,
+      "word": true
+    },
+    {
+      "text": "Around seafloor vents, some microbes",
+      "speed": 0.94,
+      "scene": "microbes",
+      "pause": 0.04
+    },
+    {
+      "text": "use chemical energy instead of sunlight.",
+      "speed": 0.92,
+      "scene": "microbes",
+      "pause": 0.15
+    },
+    {
+      "text": "Earth's internal heat wouldn't disappear",
+      "speed": 0.96,
+      "scene": "core",
+      "pause": 0.02
+    },
+    {
+      "text": "with the Sun.",
+      "speed": 0.96,
+      "scene": "core",
+      "pause": 0.2
+    },
+    {
+      "text": "Our world could lose its star,",
+      "speed": 0.94,
+      "scene": "ending",
+      "pause": 0.16
+    },
+    {
+      "text": "without immediately losing every living thing.",
+      "speed": 0.92,
+      "scene": "ending",
+      "pause": 0.6
+    }
+  ]
+}

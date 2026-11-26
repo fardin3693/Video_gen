@@ -1,0 +1,163 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 24 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "$REPO/film/compositions/captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 13
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 54,
+    "samples": [
+      3,
+      9,
+      15,
+      21,
+      27,
+      33,
+      39,
+      45,
+      51
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      3,
+      15,
+      27,
+      39,
+      51
+    ],
+    "checked": 29,
+    "passed": 29
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Solar orbit\" renders at 27 px for 1.75 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Solar orbit",
+        "selector": "#orbit-diagram > text:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/orbit.html",
+        "bbox": {
+          "x": 238.02,
+          "y": 755.4,
+          "width": 132.48,
+          "height": 32.99
+        },
+        "time": 12.5,
+        "times": [
+          12.5
+        ],
+        "fontPx": 27.17,
+        "floorPx": 28,
+        "seconds": 1.75,
+        "elements": [
+          {
+            "selector": "#orbit-diagram > text:nth-of-type(1)",
+            "text": "Solar orbit",
+            "fontPx": 27.17,
+            "time": 12.5,
+            "seconds": 1.75
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 432
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "e6180cbe-63e6-4754-b372-d30ea909c860",
+    "revision": "d0db6114-f8cf-4ab3-a81f-ed208551a89e",
+    "report": "$REPO/film/.hyperframes/artifacts/checks/e6180cbe-63e6-4754-b372-d30ea909c860.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.9.98",
+    "latestVersion": "0.9.98",
+    "updateAvailable": false,
+    "checkedAt": "2026-11-26T09:13:35.866Z"
+  }
+}

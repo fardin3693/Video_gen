@@ -1,0 +1,6 @@
+Official HyperFrames 0.9.98 final render
+Command (from film/): npx hyperframes render --quality delivery --fps 30 --workers 1 --no-browser-gpu --crf 20 -o ../output/final_video.mp4
+◇  $REPO/output/final_video.mp4
+   13.6 MB · 54.0s video · rendered in 4m 14.3s
+   screenshot capture · software gpu · compile 1.1s · extract 0.0s · audio 1.8s · probe 0.2s · setup 1.8s · capture 4m 10.6s · encode (during capture) 4m 10.6s · assemble 0.5s
+@hf-result {"version":1,"operation":"render","reference_background":{"kind":"solid","rgb":[2,9,15]}}
