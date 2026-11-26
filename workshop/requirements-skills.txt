@@ -1,0 +1,5 @@
+# Optional local YouTube research/transcription helpers; install after requirements.txt.
+# Installing these packages does not configure API keys or download Whisper weights.
+yt-dlp==2026.11.23
+google-api-python-client==2.202.0
+faster-whisper==1.2.1

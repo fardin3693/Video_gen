@@ -1,0 +1,14 @@
+node_modules/
+.venv/
+.ttstest/
+.cache/
+film/.hyperframes/
+film/.hyperframes-*/
+film/renders/
+*.log
+__pycache__/
+
+# Optional research utilities must not leak credentials or downloaded/model data.
+.env
+.env.*
+!.env.example

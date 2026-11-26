@@ -1,0 +1,5 @@
+# Local narration + QA/image-layout utilities; no hosted inference or API keys.
+kokoro-onnx==0.6.1
+soundfile==0.14.0
+numpy==2.4.6
+Pillow==13.0.0

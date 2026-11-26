@@ -1,0 +1,10 @@
+{
+  "name": "film",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "hyperframes preview",
+    "check": "hyperframes check --safe-zone shorts",
+    "render": "hyperframes render --quality delivery --fps 30 --workers 1 --no-browser-gpu --crf 20 -o ../output/final_video.mp4"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "video_gen",
+  "version": "1.0.0",
+  "description": "Arena-operated science Shorts workshop using official HyperFrames, local Kokoro and native image generation",
+  "scripts": {
+    "test": "python3 -m unittest discover -s workshop/tests -v",
+    "check": "hyperframes check film --safe-zone shorts",
+    "render": "hyperframes render film --quality delivery --fps 30 --workers 1 --no-browser-gpu --crf 20 -o output/final_video.mp4",
+    "skills:install": "python3 workshop/skills.py --install",
+    "skills:check": "python3 workshop/skills.py --check",
+    "skills:list": "python3 workshop/skills.py --list",
+    "script:review": "python3 workshop/review_script.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fardin3693/video_gen.git"
+  },
+  "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "@ffprobe-installer/ffprobe": "2.1.2",
+    "@sparticuz/chromium": "158.0.0",
+    "hyperframes": "0.9.98"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  }
+}
