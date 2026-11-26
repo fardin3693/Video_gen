@@ -73,17 +73,22 @@ If Kokoro genuinely fails after setup, the approved free fallback is `edge-tts`:
 
 Edge requires access to Microsoft's speech endpoint and may also be blocked. Verify the actual audio before adopting it, regenerate timing metadata/captions, and record the engine honestly. Never choose paid TTS automatically. Edge was **not used or needed** for this film.
 
-### Skills / registry when raw GitHub is blocked
+### Installed agent skills and tool routing
 
-The official `skills update` command was attempted but could not reach its manifest. The four core skills (`hyperframes`, `hyperframes-cli`, `hyperframes-registry`, `media-use`) were installed and read from the official GitHub source archive instead. A free fallback is:
+Start with **[`agent.md`](agent.md)**: the consolidated catalogue, phase-by-phase skill routing, local overrides and completion gates. The project includes **26 namespaced skills in both `.agents/skills/` and `.claude/skills/`**, pinned reviewed source from both Mohcen56 repositories and eight relevant Matt Pocock engineering/productivity skills.
 
 ```bash
-# Scratch outside the repo; inspect before copying any upstream source.
-curl -fL https://codeload.github.com/heygen-com/hyperframes/tar.gz/refs/heads/main -o /tmp/hyperframes.tar.gz
-mkdir -p /tmp/hyperframes-source
-tar -xzf /tmp/hyperframes.tar.gz -C /tmp/hyperframes-source
-# Copy the four named skills from hyperframes-main/skills to ~/.agents/skills/
+npm run skills:install   # offline; never clobbers unknown skill files
+npm run skills:check     # verify all vendor hashes, adapters and npm skill sources
+npm run skills:list
+npm run script:review    # narration-only checker; not an audio-duration estimate
+# Optional research/edit utility packages (no model or key installed by this):
+.venv/bin/pip install -r workshop/requirements-skills.txt
 ```
+
+Read [`workshop/skill-tools.md`](workshop/skill-tools.md) before running an upstream helper. It maps every retained tool/module to its skill, input/output, setup and verified compatibility. The old edit-kit builder is reference-only; portrait rendering stays on the proven local workflow. YouTube access and Whisper weights remain blocked in this sandbox, despite successful package imports. See the [integration report](workshop/skills-integration-report.md) for exact results and limitations.
+
+The installed npm package supplies three official HyperFrames skill sources; the fourth, registry guidance, is retained from official source with its license. No network fetch is necessary to install the project adapters after checkout. `npm ci` is required for npm-provided sources. An optional `hyperframes skills update` must not silently replace these locked project-local adapters.
 
 Use the documented registry commands `npx hyperframes catalog --query "…" --json` and `npx hyperframes add <name> --json` when reachable. They were attempted here but the HTTPS registry host was blocked; the official archive supplied the retained caption/fade-through source. No fictitious `registry` or `captions` CLI commands are used. See the production report for deviations.
 
@@ -119,7 +124,7 @@ Preview networking: the upstream local preview binds loopback in this version. A
 
 ## Future Arena sessions
 
-Read [`AGENTS.md`](AGENTS.md), [`workshop/agent-runbook.md`](workshop/agent-runbook.md), and the relevant installed official skills. Ask Arena to make **one** new science Short. The agent must independently choose/research the topic, edit the episode script and scene builder, generate new primary imagery through Arena, verify free asset licenses, execute the real render and QA, update all publishing files, and open a PR on the session's current branch. The helpers do **not** discover topics or call external models independently.
+Read [`agent.md`](agent.md), [`AGENTS.md`](AGENTS.md), [`workshop/agent-runbook.md`](workshop/agent-runbook.md), and the relevant installed skills. Ask Arena to make **one** new science Short. The agent must independently choose/research the topic, edit the episode script and scene builder, generate new primary imagery through Arena, verify free asset licenses, execute the real render and QA, update all publishing files, and open a PR on the session's current branch. The helpers do **not** discover topics or call external models independently.
 
 Do not reuse a stale voice take after changing text: remove only that episode's identified derived takes, then regenerate them. Do not overwrite an earlier completed video unless the run explicitly replaces it; archive approved previous outputs under a clearly named episode directory first. Keep the delivery count at one new finished film per run.
 

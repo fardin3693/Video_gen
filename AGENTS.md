@@ -1,6 +1,8 @@
 # Arena production contract
 
-This is an **Arena-operated workshop**, not an autonomous external model service. Read README.md and workshop/agent-runbook.md before a run.
+This is an **Arena-operated workshop**, not an autonomous external model service. Read **agent.md** (consolidated skill routing), README.md and workshop/agent-runbook.md before a run.
+
+The project-local skill catalogue and tool compatibility map are authoritative over imported upstream defaults. Run `npm run skills:check`; consult `workshop/skill-tools.md` before executing optional research/edit helpers.
 
 - Work only on the branch assigned to the current Arena session. Inspect git status and all existing files first. Preserve `lol.md` and unrelated user content.
 - Make exactly one new finished science-based What If? Short per run, normally 50–60 seconds. Never stop at plans, images, or HTML.

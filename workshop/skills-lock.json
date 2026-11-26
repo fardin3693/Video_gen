@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "installedOn": "2026-11-26",
+  "sources": [
+    {
+      "repository": "https://github.com/Mohcen56/ytb-research-skills",
+      "revision": "42a032db9c49612929e79a17aabdf111e2607e30",
+      "directory": "workshop/vendor/ytb-research-skills",
+      "license": "MIT",
+      "mode": "reviewed source subset; upstream bytes preserved"
+    },
+    {
+      "repository": "https://github.com/Mohcen56/ytb-edit-kit",
+      "revision": "af40314db56e27c6a03152f345f492b761aad886",
+      "directory": "workshop/vendor/ytb-edit-kit",
+      "license": "MIT",
+      "mode": "reviewed source subset; upstream bytes preserved"
+    },
+    {
+      "repository": "https://github.com/mattpocock/skills",
+      "revision": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
+      "directory": "workshop/vendor/mattpocock-skills",
+      "license": "MIT",
+      "mode": "reviewed source subset; upstream bytes preserved"
+    },
+    {
+      "repository": "https://github.com/heygen-com/hyperframes",
+      "archive": "https://codeload.github.com/heygen-com/hyperframes/tar.gz/refs/heads/main",
+      "archiveSha256": "504fc293d114c360663b95a767d4fcf4634615b5272745b7ac81255e79c79b86",
+      "directory": "workshop/vendor/hyperframes-registry",
+      "license": "Apache-2.0",
+      "mode": "official registry skill and supporting references from first-run archive"
+    }
+  ],
+  "runtimeSkillSource": {
+    "package": "hyperframes",
+    "version": "0.9.98",
+    "install": "npm ci (package-lock.json)"
+  },
+  "skills": [
+    {
+      "name": "hyperframes",
+      "source": "node_modules/hyperframes/dist/skills/hyperframes/SKILL.md",
+      "description": "Official HyperFrames hyperframes guidance for the installed 0.9.98 CLI.",
+      "policy": "Use installed CLI --help when upstream docs differ. No paid providers, automatic sign-in or telemetry from reading a skill. Runtime dependency: npm ci."
+    },
+    {
+      "name": "hyperframes-cli",
+      "source": "node_modules/hyperframes/dist/skills/hyperframes-cli/SKILL.md",
+      "description": "Official HyperFrames hyperframes-cli guidance for the installed 0.9.98 CLI.",
+      "policy": "Use installed CLI --help when upstream docs differ. No paid providers, automatic sign-in or telemetry from reading a skill. Runtime dependency: npm ci."
+    },
+    {
+      "name": "media-use",
+      "source": "node_modules/hyperframes/dist/skills/media-use/SKILL.md",
+      "description": "Official HyperFrames media-use guidance for the installed 0.9.98 CLI.",
+      "policy": "Use installed CLI --help when upstream docs differ. No paid providers, automatic sign-in or telemetry from reading a skill. Runtime dependency: npm ci."
+    },
+    {
+      "name": "hyperframes-registry",
+      "source": "workshop/vendor/hyperframes-registry/SKILL.md",
+      "description": "Official registry search, installation, transitions, motion and captions.",
+      "policy": "Use documented catalog/add commands when reachable; otherwise consult retained official recipes. Never disable HTTPS validation to reach a registry."
+    },
+    {
+      "name": "ytb-about-me",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/about-me/SKILL.md",
+      "description": "Read known creator constraints; optional creator-context interview only when requested.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-analyse",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/analyse/SKILL.md",
+      "description": "Evidence-backed breakdown of a reference video, with local report output.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-breakout-detector",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/breakout-detector/SKILL.md",
+      "description": "Look for historical channel breakouts using observed uploads and medians.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-bullseye",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/bullseye/SKILL.md",
+      "description": "Map science topics to the intended audience without inventing market metrics.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-channel-analysis",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/channel-analysis/SKILL.md",
+      "description": "Compare observed channel winners and typical videos when real stats exist.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-hook-machine",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/hook-machine/SKILL.md",
+      "description": "Draft and grade hooks; label editorial rubrics separately from measured winners.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-outlier-pulse",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/outlier-pulse/SKILL.md",
+      "description": "Rank recent observed competitor outliers; never fabricate unavailable metrics.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-research",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/research/SKILL.md",
+      "description": "Keep a local ideas table with sources, thumbnails and observed data.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-script",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/script/SKILL.md",
+      "description": "Write short science narration, progressive beats and a defensible payoff.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-study",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/study/SKILL.md",
+      "description": "Study reference-video batches with rights-respecting private analysis.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-video-breakdown",
+      "source": "workshop/vendor/ytb-research-skills/.claude/skills/video-breakdown/SKILL.md",
+      "description": "Inspect reference-video frames and real transcript rather than guessing edits.",
+      "policy": "Read agent.md before upstream instructions. Map tools/ to workshop/vendor/ytb-research-skills/tools/. Run output-writing tools only in an isolated research workspace (see tool guide). No mandatory interviews, fabricated identity/metrics, CTA, or Canva dependency. Statistics tools need a preconfigured free key and reachable YouTube; otherwise record unavailable. Do not ask for or store credentials in chat. Research media is not licensed production media."
+    },
+    {
+      "name": "ytb-design-system",
+      "source": "workshop/vendor/ytb-edit-kit/.claude/skills/design-system/SKILL.md",
+      "description": "Reuse the documented episode style and maintain clean topic-appropriate visual rules.",
+      "policy": "Map tools/ to workshop/vendor/ytb-edit-kit/tools/. Upstream edit builder/storyboard are reference-only here: they hard-code landscape layouts and HyperFrames 0.8.226. Use workshop/build.py plus installed HyperFrames 0.9.98 for portrait delivery. Do not remove mandatory captions from b-roll, invent a brand, require approval stops, or claim model-based listening/ASR without actual output. See workshop/skill-tools.md for every helper."
+    },
+    {
+      "name": "ytb-edit",
+      "source": "workshop/vendor/ytb-edit-kit/.claude/skills/edit/SKILL.md",
+      "description": "Plan voice-led visual changes, storyboard and inspect the final HyperFrames edit.",
+      "policy": "Map tools/ to workshop/vendor/ytb-edit-kit/tools/. Upstream edit builder/storyboard are reference-only here: they hard-code landscape layouts and HyperFrames 0.8.226. Use workshop/build.py plus installed HyperFrames 0.9.98 for portrait delivery. Do not remove mandatory captions from b-roll, invent a brand, require approval stops, or claim model-based listening/ASR without actual output. See workshop/skill-tools.md for every helper."
+    },
+    {
+      "name": "engineering-research",
+      "source": "workshop/vendor/mattpocock-skills/skills/engineering/research/SKILL.md",
+      "description": "Investigate science or API questions against primary sources; write cited local notes.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "engineering-tdd",
+      "source": "workshop/vendor/mattpocock-skills/skills/engineering/tdd/SKILL.md",
+      "description": "Validate workshop public CLI behavior with red/green regression checks.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "engineering-diagnosing-bugs",
+      "source": "workshop/vendor/mattpocock-skills/skills/engineering/diagnosing-bugs/SKILL.md",
+      "description": "Build a fast reproducible failure signal before changing render/voice/QA code.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "engineering-code-review",
+      "source": "workshop/vendor/mattpocock-skills/skills/engineering/code-review/SKILL.md",
+      "description": "Review standards and requested scope separately, including reproducibility and safety.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "engineering-pr",
+      "source": "workshop/vendor/mattpocock-skills/skills/engineering/pr/SKILL.md",
+      "description": "Write concise pull-request summaries, before/after evidence and risk notes.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "engineering-codebase-design",
+      "source": "workshop/vendor/mattpocock-skills/skills/engineering/codebase-design/SKILL.md",
+      "description": "Keep production utilities small with clear public interfaces; avoid a separate app.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "engineering-writing-for-agents",
+      "source": "workshop/vendor/mattpocock-skills/skills/productivity/writing-for-agents/SKILL.md",
+      "description": "Write concise linked agent instructions with explicit completion criteria.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "engineering-handoff",
+      "source": "workshop/vendor/mattpocock-skills/skills/productivity/handoff/SKILL.md",
+      "description": "Record current state and next actions without fabricating results.",
+      "policy": "Use current Arena capabilities; if no subagent tool exists, perform clearly separated passes yourself and disclose it. No mandatory tracker setup or new issue/label/settings changes. User authorized autonomous work: choose/document test boundaries and use the request as the spec. Git/PR work stays on the session branch; never switch/create another branch or merge. Resolve upstream unprefixed skill references through agent.md, not slash-command guesses."
+    },
+    {
+      "name": "workshop-production",
+      "source": "workshop/agent-runbook.md",
+      "description": "Operate native Arena images, Kokoro/Edge fallback, licensed audio, FFmpeg QA, thumbnail and final package.",
+      "policy": "This is the tool-specific entry for Arena-native generation, local TTS, FFmpeg/ffprobe, Pillow and GitHub delivery. Use native image tooling only. Do not generate another video merely to install skills or overwrite the completed episode. Future runs need actual narration, captions, MP4 decode/frame/audio QA, all nine publishing files and license records."
+    }
+  ],
+  "vendorFiles": {
+    "workshop/vendor/hyperframes-registry/LICENSE": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8",
+    "workshop/vendor/hyperframes-registry/SKILL.md": "dc17b1d44ad2cf992e5ab7e3edb83ce0d7ad847ebc660ec513b0c40e660abf09",
+    "workshop/vendor/hyperframes-registry/examples/add-block.md": "0e3353755c4ef55e53570d1266a4a43b2c5aef9bbe41276430e38cfa6580b83a",
+    "workshop/vendor/hyperframes-registry/examples/add-component.md": "d06992d31eec617a91f5c34630c9274c52dd07898bd24f10a869d0d1cab5af29",
+    "workshop/vendor/hyperframes-registry/references/component-quality-bar.md": "f0d4c3c44131bc0791f8a8cc3d2d7478d38045451775af7d20b2dd47cf5f91ac",
+    "workshop/vendor/hyperframes-registry/references/contributing.md": "e48fd9cf6a3c53284d6ae95fd5137ce923493dab9bef8cbe9afeda91078b9e18",
+    "workshop/vendor/hyperframes-registry/references/demo-html-pattern.md": "dfc50cd33eff2c2be75437786fc3e851ab0085f7d453fb35b3380ecf9a6e9f04",
+    "workshop/vendor/hyperframes-registry/references/discovery.md": "ca82fcc1e0b2d824b72a8bda99b60d257b23d493fa1d28adbb0548a762cacd04",
+    "workshop/vendor/hyperframes-registry/references/install-locations.md": "83793e7d6aeea9a751755e4bd23ea48182ff9af082287b98a1192343d2571dd1",
+    "workshop/vendor/hyperframes-registry/references/placeholder-material.md": "15adf4a40b26166f64df784aed065adb58051d9ccd5c0c52ad9b71e3b8367a09",
+    "workshop/vendor/hyperframes-registry/references/search.md": "4997d28db94506e1c9dce40916c6bc464c73307bae3381f354ab244496af316d",
+    "workshop/vendor/hyperframes-registry/references/templates.md": "98e1ef62d3c1264b28139d85a1c9b5a8b7438209914aebef6d9890e3f4275805",
+    "workshop/vendor/hyperframes-registry/references/wiring-blocks.md": "34bf92a4d98c2535f699c141f3df4de4697353e95067d5e6b14a4a6cbb1b651a",
+    "workshop/vendor/hyperframes-registry/references/wiring-components.md": "6c8341c29fdae6de4f9fd1560a668d11cf34731b81fe5a06c9aeb4a000047b2a",
+    "workshop/vendor/mattpocock-skills/LICENSE": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "workshop/vendor/mattpocock-skills/README.md": "345041d56cf1411b6b3ca1cc54014d26c563890f817f4cb9e2cb193dcd771a3e",
+    "workshop/vendor/mattpocock-skills/skills/engineering/code-review/SKILL.md": "9c921a8d88138a41401d8897ca1bb852088ab1b7b605cdd04edc13e3e8aab6dd",
+    "workshop/vendor/mattpocock-skills/skills/engineering/code-review/agents/openai.yaml": "8229ca854e11dc8e6aef2131ee03f31fb1561cf905fab9ccc325180cf3331352",
+    "workshop/vendor/mattpocock-skills/skills/engineering/codebase-design/DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+    "workshop/vendor/mattpocock-skills/skills/engineering/codebase-design/DESIGN-IT-TWICE.md": "c222ab5a82e0405672eb9062d62496139a08828e45d07fc5f18e4952c10fac1a",
+    "workshop/vendor/mattpocock-skills/skills/engineering/codebase-design/SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+    "workshop/vendor/mattpocock-skills/skills/engineering/codebase-design/agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f",
+    "workshop/vendor/mattpocock-skills/skills/engineering/diagnosing-bugs/SKILL.md": "849198df88cdb65fd0d97236604c1fca7ff2f22d2f705f9724a800d0266b118d",
+    "workshop/vendor/mattpocock-skills/skills/engineering/diagnosing-bugs/agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+    "workshop/vendor/mattpocock-skills/skills/engineering/diagnosing-bugs/scripts/hitl-loop.template.sh": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503",
+    "workshop/vendor/mattpocock-skills/skills/engineering/pr/CREDITS.md": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+    "workshop/vendor/mattpocock-skills/skills/engineering/pr/SKILL.md": "ab63f1cf78647389edcd386c9427c5dfca27ed2836930c24773ffee834c19bcd",
+    "workshop/vendor/mattpocock-skills/skills/engineering/pr/agents/openai.yaml": "2295b586624db4ef546f3fd4695492f039d941a46d8a1593a702ce3ca511b8ad",
+    "workshop/vendor/mattpocock-skills/skills/engineering/research/SKILL.md": "1f629e18ab899412683bc6a1c4efb4339999e27c2fdac328f26ee10a8c031d33",
+    "workshop/vendor/mattpocock-skills/skills/engineering/research/agents/openai.yaml": "9b4c470d63221c1f68f22df70b83e2f12401b317babe0d1b7b5f24a974474d0d",
+    "workshop/vendor/mattpocock-skills/skills/engineering/tdd/SKILL.md": "5505d25bbaa8fc14a79e4d20163936958992a2995b7f1dd1d6197edc9ed722e0",
+    "workshop/vendor/mattpocock-skills/skills/engineering/tdd/agents/openai.yaml": "ea6f01cf1b8c06a4b0f5b649d74b1b8ce8685e72af1b38d70d877693e092af0b",
+    "workshop/vendor/mattpocock-skills/skills/engineering/tdd/mocking.md": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+    "workshop/vendor/mattpocock-skills/skills/engineering/tdd/tests.md": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+    "workshop/vendor/mattpocock-skills/skills/productivity/handoff/SKILL.md": "4cbb043950dad2ffd3662ff1a5a0b51ae676004b5cae10e3787e8ee7a4ee69d3",
+    "workshop/vendor/mattpocock-skills/skills/productivity/handoff/agents/openai.yaml": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28",
+    "workshop/vendor/mattpocock-skills/skills/productivity/writing-for-agents/SKILL-MECHANICS.md": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+    "workshop/vendor/mattpocock-skills/skills/productivity/writing-for-agents/SKILL.md": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+    "workshop/vendor/mattpocock-skills/skills/productivity/writing-for-agents/agents/openai.yaml": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b",
+    "workshop/vendor/ytb-edit-kit/.claude/skills/about-me/SKILL.md": "04fa61fb243caae20056360d38e5313e3a1e3fc75da858e3c251daafca3878f1",
+    "workshop/vendor/ytb-edit-kit/.claude/skills/design-system/SKILL.md": "22bf9b36a2bfc5a1c2cf6f23e4031fe46ead6f93f0345abd06707f699268cf8f",
+    "workshop/vendor/ytb-edit-kit/.claude/skills/edit/SKILL.md": "0ff7fba91d93859715eda2baee92dd8ec9c3573364df40f6d5f3e646b4a91d0a",
+    "workshop/vendor/ytb-edit-kit/LICENSE": "c31185ea437277a2c6e8d679f2930e923bf388ba53f49558ca3dd78fae049f88",
+    "workshop/vendor/ytb-edit-kit/README.md": "e29832b755e6d7524a6bf9c2e746b8dbff8174d300c01f04495735dddcb425c4",
+    "workshop/vendor/ytb-edit-kit/requirements.txt": "819a799008f63e3a9611465bbbaca48e6bde3a1614d0205125f05fdf5c39340a",
+    "workshop/vendor/ytb-edit-kit/tools/captions.py": "69de8900f37c85ed7118bf65be81af897b9a5533cc81c2e0535c380333d01646",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/KINDS.md": "8204d233b4c9b9885647cf706fff1f07846ec4a65ea3ab66ab97fa0a83c6568a",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/build.py": "86c5ad8ca78b22b37347d9a15249b5eb3864da6033e787b402320aa53927b683",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/final_check.py": "5d7eeb3785582168f35e558271b3b6f38253e04e09f8c9aedac1123aa2ff38ab",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/kinds.py": "fbb90447c3b6b5cc4f5c9b54d389a44ebf88e4f9be9a9991d3e0023703c8e859",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/new_video.py": "8068e23e81f886c26c30dda879ab8181a79688f4224f4b9aba8a8f22d84003c5",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/project_template/hyperframes.json": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/project_template/package.json": "ce272258a4a48a83d90be367fa29fd2e7ba9fb353659525792c1bfdda837d7f5",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/shots_template.py": "396d804b23f82ec1c52d313ae6d000bacd1d0b1498ab106de92e3c722a8966a8",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/storyboard.py": "e247c7cc47ed05f558a2b74f76da31adf9079d26f19c09232d0c84c69e155c1b",
+    "workshop/vendor/ytb-edit-kit/tools/edit_kit/theme.py": "6785e19b846e947ae7a93a7d96e1d0000668fd1bad952d1982c2d5abc349bf02",
+    "workshop/vendor/ytb-edit-kit/tools/gif2mp4.py": "dd431d7264420651b410159dfe32eb06ee48ed7def6532fc8872781730d6f810",
+    "workshop/vendor/ytb-edit-kit/tools/tighten.py": "ee946e6fda049c9625514ce5ef04e8bebc6a6452f4253ef867fd5ab676c4c139",
+    "workshop/vendor/ytb-edit-kit/tools/transcribe.py": "4f7f5d02e2ae8fa0a507e52a4e448286a789e15a7e9a675711214b7467113b4d",
+    "workshop/vendor/ytb-research-skills/.claude/skills/about-me/SKILL.md": "e8397b0a5ddf4cdad817db2e70b9be3b75fae05ed31d6dc8e0d2b622beabc7c2",
+    "workshop/vendor/ytb-research-skills/.claude/skills/analyse/SKILL.md": "192aa621d4970bd26ccd2075e32c72e37c908b2cdadd36d0332bb02c77b6584b",
+    "workshop/vendor/ytb-research-skills/.claude/skills/breakout-detector/SKILL.md": "05b004fe50627e21fc054d198a838a385d5a05ff641b801465eccfc2eb5bc690",
+    "workshop/vendor/ytb-research-skills/.claude/skills/bullseye/SKILL.md": "57fe28d7b4ff47d697cbafcc5022a060c1f01aa785c59f850d841d631eed31b4",
+    "workshop/vendor/ytb-research-skills/.claude/skills/channel-analysis/SKILL.md": "d6174c0ff8a92fc37c58a595171b5d3ef0e0c4746c064a6b428332655e966361",
+    "workshop/vendor/ytb-research-skills/.claude/skills/hook-machine/SKILL.md": "c92c254e9b5d8d7964a9197c0b392038a73f91516f41584b55afe9c1914c5e90",
+    "workshop/vendor/ytb-research-skills/.claude/skills/outlier-pulse/SKILL.md": "5dadca33c5ec58e0a2f5ec9e7ba176e3b0134ad2e6ed52bc7316c50d3e43a8ab",
+    "workshop/vendor/ytb-research-skills/.claude/skills/research/SKILL.md": "2bc4ef8db2438dd673bf2296cd1d28dc8c43d9f0cedb00427153befd8d2c9769",
+    "workshop/vendor/ytb-research-skills/.claude/skills/script/SKILL.md": "81c8ac9e9440e3a0332502949d3f467ac6a6fc4caa9bf277f40d5a02e8717360",
+    "workshop/vendor/ytb-research-skills/.claude/skills/study/SKILL.md": "56a8766978a5ccbbd505c2d6a5848651efb929861ef8534040a06239d0455d27",
+    "workshop/vendor/ytb-research-skills/.claude/skills/video-breakdown/SKILL.md": "7b2df96784e76b545b864887fcd0c75a2e0141ad1b4328b780b7d362a4da62b3",
+    "workshop/vendor/ytb-research-skills/LICENSE": "c31185ea437277a2c6e8d679f2930e923bf388ba53f49558ca3dd78fae049f88",
+    "workshop/vendor/ytb-research-skills/README.md": "dc95ce728b0304cebf38e77b90932043fb97b703e46997aba54d3a3012975d07",
+    "workshop/vendor/ytb-research-skills/requirements.txt": "8cc0e2de2f7c2a585c39b896c489cb6d0607e21251e0d367ab2dfd7f70ac6170",
+    "workshop/vendor/ytb-research-skills/tools/.env.example": "fb6ec75b5b5fc254c7d0faf486288287df5e9b8b00ed3b3c897ae5ac3db696fb",
+    "workshop/vendor/ytb-research-skills/tools/LICENSE-varg": "2f76c8232b9c66efbbe16ba7e8f3c9a1ce1bb7b9add6f993408021ddd3ec90b9",
+    "workshop/vendor/ytb-research-skills/tools/YT_API_KEY_SETUP.md": "5bb2481daaac852e917c1ffd53496c87c00546273840be71595d757ecf95bd85",
+    "workshop/vendor/ytb-research-skills/tools/reel_fetch.py": "a093b4c97869b2aa23164fcf40663b55c54aa602aa8dc899caa669363604bdc2",
+    "workshop/vendor/ytb-research-skills/tools/script_check.py": "cd45435043189f93d2bcd301ae7cf25a3acb5345cb73ad3f80801e88d1e8799d",
+    "workshop/vendor/ytb-research-skills/tools/thumbs.py": "913a3437bbc985c46021e3ac5fecc2f4de4b378c47e9562f693899cb8ceda24f",
+    "workshop/vendor/ytb-research-skills/tools/yt.py": "92f22b86ebaf9f901c4a9207572fb0e688878634414bb7f2f9adfef3c0b8fdaf"
+  },
+  "notInstalled": [
+    "ytb-edit-kit duplicate about-me (research variant installed once)",
+    "mattpocock skills outside the eight listed engineering/productivity skills",
+    "optional earshot MCP (separate source, not requested; no listening claimed)"
+  ]
+}

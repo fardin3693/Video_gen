@@ -1,0 +1,64 @@
+[
+  {
+    "test": "Narration-only script check",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true,
+    "stdout": "Advisory WPM estimate only; use actual narration samples for duration and captions.\nSpoken: 112 words, ~0:44 at 150 wpm\n  0:00  script  (112 words)\n\n\n0 fail, 0 warn\n",
+    "stderr": ""
+  },
+  {
+    "test": "Portrait caption export on synthetic known timings",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true,
+    "stdout": "No brand/design.json yet: using plain white captions. Run the design-system skill to set your own.\n1 caption lines -> $REPO/.cache/skill-test-o1cxx4mm/captions.srt + $REPO/.cache/skill-test-o1cxx4mm/captions.ass\n",
+    "stderr": ""
+  },
+  {
+    "test": "Scratch episode scaffold (not production rendering)",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true,
+    "stdout": "ready: $REPO/.cache/skill-test-o1cxx4mm/episode\nnext:\n  1. put your voiceover in $REPO/.cache/skill-test-o1cxx4mm/episode/audio/voice.mp3\n  2. cd $REPO/.cache/skill-test-o1cxx4mm/episode/audio && python <repo>/tools/transcribe.py voice.mp3 && python <repo>/tools/tighten.py\n  3. fill $REPO/.cache/skill-test-o1cxx4mm/episode/shots.py (kinds: tools/edit_kit/KINDS.md)\n  4. python tools/edit_kit/build.py $REPO/.cache/skill-test-o1cxx4mm/episode  then  python tools/edit_kit/storyboard.py $REPO/.cache/skill-test-o1cxx4mm/episode\n",
+    "stderr": ""
+  },
+  {
+    "test": "Owned synthetic GIF to H264 clip",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true,
+    "stdout": "ok $REPO/.cache/skill-test-o1cxx4mm/test.mp4 2 frames\n",
+    "stderr": ""
+  },
+  {
+    "test": "Full decode of GIF conversion",
+    "exitCode": 0,
+    "expectedExitCode": 0,
+    "passed": true,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "test": "YouTube CLI usage (no request/key/model)",
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "stdout": "",
+    "stderr": "# YouTube research tool. YouTube Data API v3 for numbers, yt-dlp for captions/video, ffmpeg for frames, faster-whisper as transcript fallback.\n# Key: tools/.env -> YOUTUBE_API_KEY=...  (only video/channel/comments/search need it; transcript/watch work without)\n# Usage (run from anywhere):\n#   python tools/yt.py video <url|id> [more...]            stats for videos\n#   python tools/yt.py channel <@handle|url|id> [--days 60] [--max 200] [--shorts|--long]   uploads + outlier score (views / channel median)\n#   python tools/yt.py comments <url|id> [--max 40] [--order relevance|time]\n#   python tools/yt.py search \"<query>\" [--days 30] [--max 25]   recent videos for a query, with views/subs ratio\n#   python tools/yt.py transcript <url|id> [--lang en]       captions as timestamped text (whisper fal"
+  },
+  {
+    "test": "Thumbnail CLI usage (no request)",
+    "exitCode": 1,
+    "expectedExitCode": 1,
+    "passed": true,
+    "stdout": "",
+    "stderr": "usage: python tools/thumbs.py <video|playlist|channel url> [more...] [--max 30]\n"
+  },
+  {
+    "test": "Legacy tighten flag compatibility",
+    "passed": true,
+    "operationAvailable": false,
+    "reason": "Installed FFmpeg rejects -/filter_complex; keep tighten.py reference-only."
+  }
+]

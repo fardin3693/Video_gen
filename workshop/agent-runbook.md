@@ -1,5 +1,7 @@
 # Per-run operating procedure
 
+Read root `agent.md` for the installed skill catalogue, phase routing and overrides. Tool setup/compatibility: `workshop/skill-tools.md`; known owner brief: `workshop/production-context.md`. Verify with `npm run skills:check` before a production run.
+
 Arena is the researcher, director, image generator and coding operator. These scripts are production utilities, not an independently operating AI engine.
 
 1. **Inspect.** Check Git status/branch, existing outputs and source relationships. Inventory Node (22+), npm, FFmpeg/ffprobe, browser, disk and RAM. Don't delete unfamiliar files. Preserve earlier completed work unless explicitly superseded.

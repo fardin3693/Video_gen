@@ -5,7 +5,11 @@
   "scripts": {
     "test": "python3 -m unittest discover -s workshop/tests -v",
     "check": "hyperframes check film --safe-zone shorts",
-    "render": "hyperframes render film --quality delivery --fps 30 --workers 1 --no-browser-gpu --crf 20 -o output/final_video.mp4"
+    "render": "hyperframes render film --quality delivery --fps 30 --workers 1 --no-browser-gpu --crf 20 -o output/final_video.mp4",
+    "skills:install": "python3 workshop/skills.py --install",
+    "skills:check": "python3 workshop/skills.py --check",
+    "skills:list": "python3 workshop/skills.py --list",
+    "script:review": "python3 workshop/review_script.py"
   },
   "repository": {
     "type": "git",
